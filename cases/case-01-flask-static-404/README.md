@@ -8,6 +8,16 @@ Then open:
 
 http://localhost:8080/dashboard/
 
+## Broken behavior
+
+When misconfigured:
+
+http://localhost:8080/dashboard/static/style.css → 404
+
+## Fixed behavior
+
+http://localhost:8080/dashboard/static/style.css → 200 OK
+
 ## Lessons learned
 
 - Flask assumes root (`/`) by default
