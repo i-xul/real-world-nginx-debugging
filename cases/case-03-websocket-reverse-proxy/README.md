@@ -1,5 +1,16 @@
 # Case 03 – WebSocket reverse proxy issue
 
+## Connection flow
+
+Client (WebSocket)
+  ↓
+Nginx (missing upgrade headers ❌)
+  ↓
+App (handshake fails)
+
+Fixed:
+Client → Nginx (Upgrade headers ✅) → App
+
 ## 🧩 Problem
 
 Application works locally, but WebSocket connections fail when routed through Nginx.
