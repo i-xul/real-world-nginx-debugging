@@ -149,7 +149,7 @@ Planned additions:
 
 ## 🧱 Environment
 
-Typical stack used in these cases:
+Typical stack used in these cases (tested in real self-hosted setups):
 
 * Nginx
 * Flask
