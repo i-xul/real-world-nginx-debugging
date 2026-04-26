@@ -1,3 +1,13 @@
+## Request flow
+
+Client → /dashboard/static/style.css
+
+Broken:
+Client → Nginx → /dashboard/static/style.css → App ❌
+
+Fixed:
+Client → Nginx → /static/style.css → App ✅
+
 # Case 02 – proxy_pass trailing slash bug
 
 ## 🧩 Problem
