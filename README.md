@@ -130,9 +130,9 @@ https://example.com/dashboard/static/style.css → 200 OK
 
 - [Case 01 – Flask static files returning 404 behind Nginx subpath](./cases/case-01-flask-static-404)
 - [Case 02 – proxy_pass trailing slash bug](./cases/case-02-proxy-pass-trailing-slash)
+- [Case 03 – WebSocket reverse proxy issue](./cases/case-03-websocket-reverse-proxy)
 
 Planned:
-- Case 03 – WebSocket reverse proxy issue
 - Case 04 – Host header misconfiguration
 
 ---
