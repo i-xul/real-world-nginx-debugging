@@ -1,5 +1,19 @@
 # Case 04 – Host header misconfiguration
 
+## Header flow
+
+Client (Host: example.com)
+  ↓
+Nginx
+  ↓
+App
+
+Broken:
+Host: 127.0.0.1 ❌
+
+Fixed:
+Host: example.com ✅
+
 ## 🧩 Problem
 
 Application behaves differently when accessed through Nginx reverse proxy.
