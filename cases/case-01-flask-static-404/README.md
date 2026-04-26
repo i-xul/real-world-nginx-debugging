@@ -1,3 +1,13 @@
+## Architecture
+
+Client
+  ↓
+Nginx (/dashboard)
+  ↓
+Flask app (/)
+  ↓
+Static files (/static)
+
 ## How to run
 
 ```bash
